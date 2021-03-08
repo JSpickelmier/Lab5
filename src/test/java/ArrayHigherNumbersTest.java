@@ -23,13 +23,13 @@ public class ArrayHigherNumbersTest {
     @Test
     public void testArrayCount() {
         System.out.println("ArrayCount");
-        int[] Array = null;
+        int[] Array = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
         int inputNumb = 10;
         int expResult = 5;
         int result = ArrayHigherNumbers.ArrayCount(Array, inputNumb);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
     
 }

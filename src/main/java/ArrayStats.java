@@ -10,7 +10,7 @@
  */
 public class ArrayStats {
     public static void main(String[] args) {
-        int [] TestData = {1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,17,18,19,20};
+        int [] TestData = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
         int Total = getTotal(TestData);
         double Average = getAverage(TestData);
         int Highest = getHighest(TestData);
@@ -24,7 +24,7 @@ public class ArrayStats {
     
     public static int getTotal(int [] Array){
         int total = 0;
-        for (int i = 1; i < Array.length; i++){
+        for (int i = 0; i < Array.length; i++){
             total += Array[i];
         }
         return total;
@@ -33,8 +33,8 @@ public class ArrayStats {
      
     
      public static double getAverage(int [] Array){
-        int total = 0;
-        for (int i = 1; i < Array.length; i++){
+        double total = 0;
+        for (int i = 0; i < Array.length; i++){
             total += Array[i];
         }
         double average = total / Array.length;
